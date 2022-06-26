@@ -1,4 +1,64 @@
-.navbar-collapse{
-    
-    color: red;
-}
+.logoJp {
+    margin-top: 20px;
+  }
+  .parallax {
+    background-image: url(/img/empresa2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     
+  }
+  
+  @media (max-width: 1000px) {
+    .carousel-item {
+      width: auto;
+      max-height: 200px;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .carousel-item {
+      width: auto;
+      max-height: 400px;
+    }
+  }
+  
+  @media (max-width: 800px) {
+      .parallax {
+        width: auto;
+        min-height: 100px;
+      }
+    }
+  
+    @media (max-width: 400px) {
+      #ribbon {
+       position: absolute;
+       min-height: 20px;
+      }
+    }
+  
+  #ribbon::after{
+      content:'';
+      background-color: transparent;
+      display: block;
+      height: 30px;
+      width: 50%;
+      margin: 0 auto;
+      position: relative;
+      left: auto;
+      margin-top: -40px;
+  }
+  
+  #logoParallax{
+      background-color: rgb(13, 12, 12);
+      position: relative;
+      margin-top: -60px;
+      margin-bottom: -60px;
+      z-index: 10;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.371);
+  }
+  
+  #cTextOne{
+      padding: 50px;
+  }
