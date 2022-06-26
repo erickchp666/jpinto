@@ -5,50 +5,48 @@
   <title>JPinto</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
+
   <link rel="stylesheet" href="/css/bootstrap.min.css" />
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
   <!-- Header & Navbar  -->
-  <header class="jpEstudioContable">
-    <nav class="navbar navbar-expand-lg bg-black navbar-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img class="logoJp" src="/img/logo jp1.png" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul  class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#sectProducts">Servicios</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Contacto
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="tel:+593969014770">Celular</a></li>
-                <li><a class="dropdown-item" href="https://walink.co/3204b4" target="_blank">Whatsapp</a></li>
-              </ul>
-            </li>
-           
-          </ul>
-        </div>
+  <nav class="navbar sticky-top navbar-expand-lg bg-black navbar-dark bg-gradient">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img class="logoJp" src="/img/logo jp1.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#nosotros">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sectProducts">Servicios</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Contacto
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="tel:+593969014770">Celular</a></li>
+              <li><a class="dropdown-item" href="https://walink.co/3204b4" target="_blank">Whatsapp</a></li>
+            </ul>
+          </li>
+
+        </ul>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
   <!-- Jumbotron -->
   <article>
     <!-- Slider -->
@@ -93,12 +91,25 @@
         </div>
       </div>
     </section>
-
+    <!-- Nosotros -->
+    <section id="nosotros" class="formJp">
+      <div class="formDivJp col ">
+        <div class="col-8">
+          <h3 class="  display-1">Nosotros</h3><br>
+          <p class="">"Jpinto Estudio Contable dedicada al valor y poder de la información Financiera y Contable
+            dentro de una empresa. Nuestros objetivos estan centrados en hacer crecer con estrategias sanas y adaptadas
+            a
+            la tributación, los negocios pequeños y medianos, educando y generando una buena relación y ambiente de
+            trabajo. Los valores de nuestra empresa estan enfocados al cumplimiento de las leyes tributarias, a la
+            maximixación de beneficios con estrategias financieras y de control interno y al vinculo de crecimiento en
+            conjunto a nuestros clientes."</p>
+        </div>
+      </div>
+    </section>
     <!-- BORDE RIBBON -->
     <div id="separadorRibbon">
       <div class="content"></div>
     </div>
-
     <!-- Productos -->
     <section id="sectProducts" class="productosSection">
       <div id="products">
@@ -109,9 +120,11 @@
           </div>
 
           <div class="row">
-            <div class="col-sm">
+            <div class="col-sm ">
               <div class="card w-100 card-border mb-5">
-                <img src="/img/IVA-MENSUAL.png" class="card-img-top" alt="...">
+                <a href="#formJpid">
+                  <img src="/img/IVA-MENSUAL.png" class="card-img-top" alt="...">
+                </a>
                 <div class="card-body ">
                   <p class="card-text">"Siempre te lleva la cuenta"</p>
                 </div>
@@ -119,7 +132,9 @@
             </div>
             <div class="col-sm">
               <div class="card w-100 card-border mb-5">
-                <img src="/img/PATRIMONIAL.png" class="card-img-top" alt="...">
+                <a href="#formJpid">
+                  <img src="/img/PATRIMONIAL.png" class="card-img-top" alt="...">
+                </a>
                 <div class="card-body">
                   <p class="card-text">"Prioriza tus finanzas"</p>
                 </div>
@@ -127,7 +142,10 @@
             </div>
             <div class="col-sm">
               <div class="card w-100 card-border mb-5">
-                <img src="/img/SEMESTRAL.png" class="card-img-top" alt="...">
+
+                <a href="#formJpid">
+                  <img src="/img/SEMESTRAL.png" class="card-img-top" alt="...">
+                </a>
                 <div class="card-body">
                   <p class="card-text">"Contabilidad Sana para ti y tu negocio"</p>
                 </div>
@@ -136,69 +154,56 @@
           </div>
 
     </section>
-
     <!-- BORDE RIBBON -->
     <div id="separadorRibbonTurn">
       <div class="content"></div>
     </div>
 
 
-
-    <section class="formJp">
+    <!-- formulario -->
+    <section id="formJpid" class="formJp">
       <div class="formDivJp">
-        <h1 class="col-6 h1Form display-1">Solicita una cotizacion</h1>
-      <form class="row  col-5">
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Email</label>
-          <input type="email" class="form-control" id="inputEmail4">
-        </div>
-        <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">Password</label>
-          <input type="password" class="form-control" id="inputPassword4">
-        </div>
-        <div class="col-12">
-          <label for="inputAddress" class="form-label">Address</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-        </div>
-        <div class="col-12">
-          <label for="inputAddress2" class="form-label">Address 2</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-        </div>
-        <div class="col-md-6">
-          <label for="inputCity" class="form-label">City</label>
-          <input type="text" class="form-control" id="inputCity">
-        </div>
-        <div class="col-md-4">
-          <label for="inputState" class="form-label">State</label>
-          <select id="inputState" class="form-select">
-            <option selected>Choose...</option>
-            <option>...</option>
-          </select>
-        </div>
-        <div class="col-md-2">
-          <label for="inputZip" class="form-label">Zip</label>
-          <input type="text" class="form-control" id="inputZip">
-        </div>
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Check me out
-            </label>
+        <h2 class="col-6 h1Form display-1">Solicita una cotizacion</h2>
+        <form class="row  col-5">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Ingresa tu Correo">
           </div>
-        </div>
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Sign in</button>
-        </div>
-      </form>
-    </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Ingresa tu Contraseña">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Dirección</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Ingresa tu Dirección">
+          </div>
+
+          <div class="col-md-12">
+            <label for="inputname" class="form-label">Nombre y Apellido</label>
+            <input type="text" class="form-control" id="inputname" placeholder="Ingresa tu Nombre">
+          </div>
+
+
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Acepto las Políticas
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary bg-black bg-gradient border-warning">Registrate</button>
+          </div>
+        </form>
+      </div>
     </section>
 
   </article>
 
-  <!-- adicionales -->
+   <!--footer  -->
 
-  <!--footer  -->
+   
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="/js/popper.min.js"></script>
