@@ -19,7 +19,7 @@ html {
 }
 
 .parallax {
-  background-image: url(/img/jpv.jpg);
+  background-image: url("/img/jpv.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
